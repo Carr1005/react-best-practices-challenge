@@ -22,6 +22,15 @@ class Main extends Component {
     return cards;
   }
 
+  // generateCards(cardsData, cardsCols, cardsSpace) {
+  //   console.log(cardsData);
+  //   return cardsData.map((card, i) => 
+  //     (<Card cardContent={card.content} gridCols={cardsCols} spacing={cardsSpace} key={i} ></Card>)
+  //   ) ;
+  // }
+  
+  // this.generateCards(CardContent.cards, this.cardsCols, this.cardsSpace)
+
   render() {
     return (
       <div className="py-5 bg-light">
