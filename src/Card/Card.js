@@ -8,7 +8,7 @@ class Card extends Component {
 
     return (
       <div className={this.props.gridCols}>
-        <div className={"card box-shadow "+this.props.spacing}>
+        <div className={`card ${this.props.spacing} box-shadow`}>
           <img className="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"></img>
           <div className="card-body">
             <p className="card-text">{this.props.cardContent.text}</p>

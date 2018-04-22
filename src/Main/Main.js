@@ -14,10 +14,10 @@ class Main extends Component {
     this.cardsSpace = "mb-4";    // https://getbootstrap.com/docs/4.0/utilities/spacing/#notation
   }
 
-  generateCards(cardsNum) {
+  generateCards(cardsNum, cardsCols, cardsSpace) {
     let cards = [];
     for (let i = 0; i < cardsNum; i++) {
-      cards.push((<Card cardContent={CardContent.cards[0].content} gridCols={this.cardsCols} spacing={this.cardsSpace} key={i} ></Card>));
+      cards.push((<Card cardContent={CardContent.cards[0].content} gridCols={cardsCols} spacing={cardsSpace} key={i} ></Card>));
     }
     return cards;
   }
@@ -27,7 +27,7 @@ class Main extends Component {
       <div className="py-5 bg-light">
         <div className="container">
           <div className="row">
-            {this.generateCards(this.cardsNum)}
+            {this.generateCards(this.cardsNum, this.cardsCols, this.cardsSpace)}
           </div>
         </div>
       </div>
