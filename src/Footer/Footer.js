@@ -11,7 +11,7 @@ class Footer extends Component {
       targetComp.scrollIntoView({behavior: "smooth", block: "start"});
     }
   }
-
+  
   render() {
     return (
       <footer className="text-muted">
