@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import holderjs from 'holderjs'
+import holderjs from 'holderjs';
+import Immutable from 'immutable';
 import './Card.css';
 
 class Card extends Component {
   
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return !Immutable.Map(this.props).equals(nextProps);
+  // }
 
   render() {
-    console.log('render');
+
     return (
       <div className={this.props.gridCols}>
         <div className={`card ${this.props.spacing} box-shadow`}>
@@ -24,7 +28,6 @@ class Card extends Component {
         </div>
       </div>
     );
-    
   }
 }
 
