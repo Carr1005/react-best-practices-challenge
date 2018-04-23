@@ -4,8 +4,9 @@ import './Card.css';
 
 class Card extends Component {
   
-  render() {
 
+  render() {
+    console.log('render');
     return (
       <div className={this.props.gridCols}>
         <div className={`card ${this.props.spacing} box-shadow`}>
