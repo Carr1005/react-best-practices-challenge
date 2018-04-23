@@ -17,7 +17,7 @@ class Main extends Component {
   generateCards(cardsNum, cardsCols, cardsSpace) {
     let cards = [];
     for (let i = 0; i < cardsNum; i++) {
-      cards.push((<Card cardContent={CardContent.cards[0].content} gridCols={cardsCols} spacing={cardsSpace} key={i} ></Card>));
+      cards.push((<Card cardContent={CardContent.cards[i].content} gridCols={cardsCols} spacing={cardsSpace} key={CardContent.cards[i].id} ></Card>));
     }
     return cards;
   }
@@ -25,7 +25,7 @@ class Main extends Component {
   // generateCards(cardsData, cardsCols, cardsSpace) {
   //   console.log(cardsData);
   //   return cardsData.map((card, i) => 
-  //     (<Card cardContent={card.content} gridCols={cardsCols} spacing={cardsSpace} key={i} ></Card>)
+  //     (<Card cardContent={card.content} gridCols={cardsCols} spacing={cardsSpace} key={CardContent.cards[i].id} ></Card>)
   //   ) ;
   // }
   
