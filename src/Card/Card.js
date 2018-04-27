@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import holderjs from 'holderjs';
 import Immutable from 'immutable';
 import './Card.css';
@@ -8,6 +9,10 @@ class Card extends Component {
   // shouldComponentUpdate(nextProps, nextState) {
   //   return !Immutable.Map(this.props).equals(nextProps);
   // }
+  static defaultProps = {
+    gridCols: "col-md-4",
+    spacing: "mb-4"
+  }
 
   render() {
 
@@ -30,5 +35,12 @@ class Card extends Component {
     );
   }
 }
+
+
+Card.propTypes = {
+  gridCols: PropTypes.string,
+  spacing: PropTypes.string,
+  cardContent: PropTypes.object.isRequired
+};
 
 export default Card;

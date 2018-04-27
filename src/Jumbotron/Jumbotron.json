@@ -8,7 +8,7 @@
 
     }, {
     	"label": "Secondary action",
-    	"styleClass": "btn-secondary"
+      "styleClass": "btn-secondary"
     }
   ]
 
