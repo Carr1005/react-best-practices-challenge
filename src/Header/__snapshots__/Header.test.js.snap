@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test 1`] = `
+<div
+  className="navbar navbar-dark bg-dark box-shadow"
+  id="top"
+>
+  <div
+    className="container d-flex justify-content-between"
+  >
+    <a
+      className="navbar-brand d-flex align-items-center"
+      href="#"
+    >
+      <i
+        className="material-icons"
+      >
+        photo_camera
+      </i>
+      <strong>
+        Album
+      </strong>
+    </a>
+  </div>
+</div>
+`;

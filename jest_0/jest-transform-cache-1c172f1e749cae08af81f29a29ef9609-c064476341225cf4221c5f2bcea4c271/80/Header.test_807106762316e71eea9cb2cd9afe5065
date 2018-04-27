@@ -1,0 +1,14 @@
+'use strict';var _jsxFileName = '/var/tunnel2host/Vynca-Challenge/vynca-challenges/src/Header/Header.test.js';var _react = require('react');var _react2 = _interopRequireDefault(_react);
+var _Header = require('../Header');var _Header2 = _interopRequireDefault(_Header);
+
+
+var _reactTestRenderer = require('react-test-renderer');var _reactTestRenderer2 = _interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+test('Header test', () => {
+  const component = _reactTestRenderer2.default.create(
+  _react2.default.createElement(_Header2.default, { __source: { fileName: _jsxFileName, lineNumber: 9 }, __self: undefined }));
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+
+});

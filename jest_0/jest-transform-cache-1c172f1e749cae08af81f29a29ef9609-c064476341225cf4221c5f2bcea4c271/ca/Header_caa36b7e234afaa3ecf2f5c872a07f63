@@ -1,0 +1,19 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/tunnel2host/Vynca-Challenge/vynca-challenges/src/Header/Header.js';var _react = require('react');var _react2 = _interopRequireDefault(_react);
+require('./Header.css');function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class Header extends _react.Component {
+  render() {
+    return (
+      _react2.default.createElement('div', { id: 'top', className: 'navbar navbar-dark bg-dark box-shadow', __source: { fileName: _jsxFileName, lineNumber: 7 }, __self: this },
+        _react2.default.createElement('div', { className: 'container d-flex justify-content-between', __source: { fileName: _jsxFileName, lineNumber: 8 }, __self: this },
+          _react2.default.createElement('a', { href: '#', className: 'navbar-brand d-flex align-items-center', __source: { fileName: _jsxFileName, lineNumber: 9 }, __self: this },
+            _react2.default.createElement('i', { className: 'material-icons', __source: { fileName: _jsxFileName, lineNumber: 10 }, __self: this }, 'photo_camera'),
+            _react2.default.createElement('strong', { __source: { fileName: _jsxFileName, lineNumber: 11 }, __self: this }, 'Album')))));
+
+
+
+
+  }}exports.default =
+
+
+Header;

@@ -1,0 +1,47 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/tunnel2host/Vynca-Challenge/vynca-challenges/src/Main/Main.js';
+
+
+
+/* custom component */var _react = require('react');var _react2 = _interopRequireDefault(_react);require('./Main.css');var _Main = require('./Main.json');var _Main2 = _interopRequireDefault(_Main);
+var _Card = require('../Card/Card');var _Card2 = _interopRequireDefault(_Card);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class Main extends _react.Component {
+
+  constructor() {
+    super();
+    this.cardsNum = 9;
+    this.cardsCols = "col-md-4"; // bootstrap feature: https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
+    this.cardsSpace = "mb-4"; // https://getbootstrap.com/docs/4.0/utilities/spacing/#notation
+  }
+
+  generateCards(cardsNum, cardsCols, cardsSpace) {
+    let cards = [];
+    for (let i = 0; i < cardsNum; i++) {
+      cards.push(_react2.default.createElement(_Card2.default, { cardContent: _Main2.default.cards[i].content, gridCols: cardsCols, spacing: cardsSpace, key: _Main2.default.cards[i].id, __source: { fileName: _jsxFileName, lineNumber: 20 }, __self: this }));
+    }
+    return cards;
+  }
+
+  // generateCards(cardsData, cardsCols, cardsSpace) {
+  //   console.log(cardsData);
+  //   return cardsData.map((card, i) => 
+  //     (<Card cardContent={card.content} gridCols={cardsCols} spacing={cardsSpace} key={CardContent.cards[i].id} ></Card>)
+  //   ) ;
+  // }
+
+  // this.generateCards(CardContent.cards, this.cardsCols, this.cardsSpace)
+
+  render() {
+    return (
+      _react2.default.createElement('div', { className: 'py-5 bg-light', __source: { fileName: _jsxFileName, lineNumber: 36 }, __self: this },
+        _react2.default.createElement('div', { className: 'container', __source: { fileName: _jsxFileName, lineNumber: 37 }, __self: this },
+          _react2.default.createElement('div', { className: 'row', __source: { fileName: _jsxFileName, lineNumber: 38 }, __self: this },
+            this.generateCards(this.cardsNum, this.cardsCols, this.cardsSpace)))));
+
+
+
+
+  }}exports.default =
+
+
+Main;

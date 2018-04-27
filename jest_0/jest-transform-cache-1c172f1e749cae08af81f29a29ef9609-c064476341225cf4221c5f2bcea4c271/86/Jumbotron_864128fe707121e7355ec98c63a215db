@@ -1,0 +1,25 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/tunnel2host/Vynca-Challenge/vynca-challenges/src/Jumbotron/Jumbotron.js';
+
+
+
+/* custom component */var _react = require('react');var _react2 = _interopRequireDefault(_react);require('./Jumbotron.css');var _Jumbotron = require('./Jumbotron.json');var _Jumbotron2 = _interopRequireDefault(_Jumbotron);
+var _Button = require('../Button/Button');var _Button2 = _interopRequireDefault(_Button);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class Jumbotron extends _react.Component {
+  render() {
+    return (
+      _react2.default.createElement('section', { className: 'jumbotron text-center', __source: { fileName: _jsxFileName, lineNumber: 11 }, __self: this },
+        _react2.default.createElement('div', { className: 'container', __source: { fileName: _jsxFileName, lineNumber: 12 }, __self: this },
+          _react2.default.createElement('h1', { className: 'jumbotron-heading', __source: { fileName: _jsxFileName, lineNumber: 13 }, __self: this }, _Jumbotron2.default.title),
+          _react2.default.createElement('p', { className: 'lead text-muted', __source: { fileName: _jsxFileName, lineNumber: 14 }, __self: this }, _Jumbotron2.default.text),
+          _react2.default.createElement('p', { __source: { fileName: _jsxFileName, lineNumber: 15 }, __self: this },
+            _react2.default.createElement(_Button2.default, { buttonMeta: _Jumbotron2.default.buttons[0], __source: { fileName: _jsxFileName, lineNumber: 16 }, __self: this }),
+            _react2.default.createElement(_Button2.default, { buttonMeta: _Jumbotron2.default.buttons[1], __source: { fileName: _jsxFileName, lineNumber: 17 }, __self: this })))));
+
+
+
+
+  }}exports.default =
+
+
+Jumbotron;

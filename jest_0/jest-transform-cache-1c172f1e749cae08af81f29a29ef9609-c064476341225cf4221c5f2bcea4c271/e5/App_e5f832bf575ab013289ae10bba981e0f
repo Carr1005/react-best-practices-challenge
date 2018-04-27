@@ -1,0 +1,23 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/tunnel2host/Vynca-Challenge/vynca-challenges/src/App.js';
+
+
+/* custom component */var _react = require('react');var _react2 = _interopRequireDefault(_react);require('./App.css');
+var _Header = require('./Header/Header');var _Header2 = _interopRequireDefault(_Header);
+var _Jumbotron = require('./Jumbotron/Jumbotron');var _Jumbotron2 = _interopRequireDefault(_Jumbotron);
+var _Main = require('./Main/Main');var _Main2 = _interopRequireDefault(_Main);
+var _Footer = require('./Footer/Footer');var _Footer2 = _interopRequireDefault(_Footer);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class App extends _react.Component {
+  render() {
+    return (
+      _react2.default.createElement('div', { __source: { fileName: _jsxFileName, lineNumber: 13 }, __self: this },
+        _react2.default.createElement(_Header2.default, { __source: { fileName: _jsxFileName, lineNumber: 14 }, __self: this }),
+        _react2.default.createElement(_Jumbotron2.default, { __source: { fileName: _jsxFileName, lineNumber: 15 }, __self: this }),
+        _react2.default.createElement(_Main2.default, { __source: { fileName: _jsxFileName, lineNumber: 16 }, __self: this }),
+        _react2.default.createElement(_Footer2.default, { __source: { fileName: _jsxFileName, lineNumber: 17 }, __self: this })));
+
+
+  }}exports.default =
+
+
+App;
