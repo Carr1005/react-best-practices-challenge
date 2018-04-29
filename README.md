@@ -1,4 +1,4 @@
-## Vynca Challenges
+## React Best Practices Challenge 
 
 [Demo](http://carr1005.github.io/vynca-challenges/)
 
