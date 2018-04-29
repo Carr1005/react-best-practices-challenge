@@ -21,7 +21,10 @@
 
 - [x] - Missing dependencies.  (Using `--save` do save u)
 
-- Avoid unnecessary re-rendering.  
+- [X] - Avoid unnecessary re-rendering.  
+
+
+To observe the `shouldComponentUpdate()`:  
 
 [![Edit Update](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/oox46oww46)
 
